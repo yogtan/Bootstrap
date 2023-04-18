@@ -4,34 +4,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Toko Online</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>My Profil</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="../fonr"> -->
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../Gambar/FutsalLogo.png" alt="Logo" width="30" height="32"
-                    class="d-inline-block align-text-top">
-                ReservF
+    <!-- Nabar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-size: 24px; padding-bottom: 30px;">
+                <img src="Gambar/Logo.png" alt="Logo" width="40" height="40" class="me-2">
+                MyProfile
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Lapangan</a>
+                        <a class="nav-link active" aria-current="page" style="font-size: 20px; font-weight: bolder;"
+                            href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak</a>
+                        <a class="nav-link" style="font-size: 20px;" href="#story">Story</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Belanja</a>
+                        <a class="nav-link" style="font-size: 20px;" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: 20px;" href="#assigment">Assignment</a>
                     </li>
 
                 </ul>
@@ -39,9 +45,245 @@
         </div>
     </nav>
 
+    <!-- Home -->
+    <section class="home" style="background-image: url('Gambar/background.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="text-white mb-4">Welcome to My Portfolio</h1>
+                    <p class="text-white mb-5" style=" text-align: justify;
+                    font-family: 'Courier New', Courier, monospace;">I'm Yogtan, Welcome to my portofolio. This is my
+                        first website portofolio, i invite you to explore my site to get a better
+                        understanding of my profile. This site to complite my assigment platfrom.
+                    </p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                </div>
+                <div class="col-md-6">
+                    <div class="video-wrapper" style="padding-top: 150px;">
+                        <video autoplay loop muted width=" 100%" height="100%">
+                            <source src="Gambar/Video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Buat Batas Doank -->
+    <section class="batas">
+        <div class="gambar-teks" style="background-image: url('Gambar/Batas.jpg');">
+            <p> <b>Motivasi</b> <br>
+                "Success is the result of the best decisions we make, the best actions we take, and the best
+                perseverance we have."
+            </p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <!-- <h1 class="text-center">ABOUT</h1> -->
+        <div class="row">
+            <div class="col text-center" style="color:white; padding-top: 150px;">
+                <h4>About Me</h4>
+                <p>
+                    Hello, my name is Johanes Yogtan Wicaksono Raharja. I am 20 years old and was born in a small
+                    area in West Kalimantan. I really enjoy playing games and music. I have a lot of experience in
+                    playing games and musical instruments. I am very skilled in playing games and can spend hours
+                    every day playing them. In addition to that, I am also a player of both modern and traditional
+                    musical instruments.<br><br>
+
+                    However, besides my other hobbies, I am also very interested in technology and am currently
+                    learning through an online learning website to increase my knowledge about the world of
+                    technology. I hope to become an expert in the field of technology in the future and make a
+                    positive change in the digital world.</p>
+
+            </div>
+            <div class="col">
+                <img src="Gambar/fotoAbout.jpeg" alt="" width="100%" height="100%">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="batas">
+        <div class="gambar-teks" style="background-image: url('Gambar/Batas.jpg');">
+            <p> <b>Motivasi</b> <br>
+                "Success is the result of the best decisions we make, the best actions we take, and the best
+                perseverance we have."
+            </p>
+        </div>
+    </section>
+
+    <!-- Story -->
+    <section id="story" class="story">
+        <div class="container">
+            <div class="row" style="padding-top: 30px;">
+                <div class="card" style="width: 18rem; height: 400px;">
+                    <img src="Gambar/Foto3.jpeg" class="card-img-top" alt="..." style="height:350px; ">
+                    <div class="card-body">
+                        <p class="card-text">Family</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; height: 400px;">
+                    <img src="Gambar/Foto6.jpeg" class="card-img-top" alt="..." style="height:350px; ">
+                    <div class="card-body">
+                        <p class="card-text">HMIF</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; height: 400px;">
+                    <img src="Gambar/Foto5.jpeg" class="card-img-top" alt="..." style="height:350px; ">
+                    <div class="card-body">
+                        <p class="card-text">Futsal</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; height: 400px;">
+                    <img src="Gambar/Foto2.jpeg" class="card-img-top" alt="..." style="height:350px; ">
+                    <div class="card-body">
+                        <p class="card-text">Hutan Pinus</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; height: 400px;">
+                    <img src="Gambar/Foto3.jpeg" class="card-img-top" alt="..." style="height:350px; ">
+                    <div class="card-body">
+                        <p class="card-text">Family</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; height: 400px;">
+                    <img src="Gambar/Foto4.jpeg" class="card-img-top" alt="..." style="height:350px; ">
+                    <div class="card-body">
+                        <p class="card-text">Pakat Dayak</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; height: 400px;">
+                    <img src="Gambar/Foto5.jpeg" class="card-img-top" alt="..." style="height:350px; ">
+                    <div class="card-body">
+                        <p class="card-text">Futsal</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; height: 400px;">
+                    <img src="Gambar/Foto6.jpeg" class="card-img-top" alt="..." style="height:350px; ">
+                    <div class="card-body">
+                        <p class="card-text">HMIF</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pendidikan -->
+    <section id="education" class="education">
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Tahun</th>
+                        <th scope="col">Nama Sekolah</th>
+                        <th scope="col">Alamat Sekolahh</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">2008-2010</th>
+                        <td>TK Fransiscus Xaxerius Meliau</td>
+                        <td>Meliau</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2010-2016</th>
+                        <td>SDN 02 Meliau</td>
+                        <td>Meliau</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2016-2018</th>
+                        <td>SMPN 01 Meliau</td>
+                        <td>Meliau</td>
+
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2018-2021</th>
+                        <td>SMA DOon Bosco Sanggau</td>
+                        <td>Sanggau</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2021-2025</th>
+                        <td>Universitas Sanata Dharma</td>
+                        <td>Sanggau</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Tugas -->
+    <section id="assigment" class="assigment">
+        <div class="row text-center">
+            <div class="form-items">
+            </div>
+        </div>
+
+        <div class="container">
+            <h3>Assigment</h3>
+            <div class="mb-3">
+                <label for="namadepan" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="namadepan" placeholder="Nama Depan" />
+            </div>
+            <div class="mb-3">
+                <label for="namabelakang" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="namabelakang" placeholder="Nama Belakang" />
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+            </div>
+            <div class="mb-3">
+                <label for="JumPilihan" class="form-label">Number of Choices</label>
+                <input type="number" class="form-control" id="jumPilihan" />
+                <br />
+                <button onclick="TampilanPilihan()" id="ok">OK</button>
+
+            </div>
+
+            <div id="pilihan"></div>
+            <div id="btnRadio"></div>
+            <div id="Outputdata"></div>
+        </div>
+
+        <script src="javascript.js"></script>
+    </section>
+
+
+    <!-- Model -->
+    <div class="modal" tabindex="-1" id="pop">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
 

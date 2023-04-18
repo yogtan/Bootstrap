@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling untuk navbar */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.nav-link {
+  color: #555;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  position: relative;
+}
+
+.nav-link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #222;
+  transition: width 0.2s ease-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* Home */
+.home {
+  background-color: #707070;
+}
+
+.home h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  /* border-bottom: 5px solid #ffffff; */
+  animation: moveText 2s infinite;
+}
+
+.home {
+  margin-top: 80px;
+  padding-bottom: 200px;
+  background-color: #707070;
+}
+
+.home .col {
+  /* text-align: center; */
+  padding-top: 360px;
+  /* background-color: rebeccapurple; */
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 180px;
+}
+
+.profileImage {
+  width: 200px;
+  height: 180px;
+}
+
+/* About */
+.about {
+  /* padding-top: 100px; */
+
+  background-color: white;
+}
+
+.about h4 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding-right: 400px;
+  /* border-bottom: 5px solid #ffffff; */
+  animation: moveText 2s infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.about p {
+  padding-left: 100px;
+  text-align: justify;
+  padding-right: 100px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.about .col {
+  background-color: #2a2a2a
+}
+
+.gambar-teks {
+  height: 300px;
+  width: 100%;
+  padding-left: 500px;
+  padding-right: 500px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+.story {
+  padding-left: 120px;
+  background-color: #2a2a2a;
+  padding-bottom: 20px;
+}
+
+.education {
+  padding-top: 200px;
+  padding-bottom: 300px;
+  background-color: #707070;
+
+}
+
+.assigment {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
